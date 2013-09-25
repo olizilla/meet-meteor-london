@@ -60,7 +60,7 @@ Meteor.methods({
 	fin: function(){
 		console.log('FIN!');
 
-		var lastSlide = 30;
+		var lastSlide = 37;
 
 		// TODO: Bad code. Try again.
 		Players.find().forEach(function(player) {
@@ -72,3 +72,7 @@ Meteor.methods({
 		});
 	}
 });
+
+function now(){
+	return Date.now();
+}

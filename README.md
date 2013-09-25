@@ -1,7 +1,9 @@
-Meteor: The Medium Is The Message
-=================================
+Meet Meteor London
+==================
 
-A talk about [Meteor][], [MongoDB][] & [D3][], as a Meteor app. 
+A talk about [Meteor London][], as [Meteor][] app, derived from [Meteor: The Medium Is The Message][]
+
+
 
 So, what should we pack for this trip?
 
@@ -144,7 +146,7 @@ But... it's the transparent and unified data magic that means you can crank out 
 Rocking out
 -----------
 
-
+Go build a thing.
 
 
 
@@ -155,7 +157,8 @@ Contention Bones
 - "Will it scale". To paraphrase [Cory Doctorow], you have more to fear from obscurity than from collapsing at scale. Write your killer feature, go live, prove it's a good idea, then load test it. Maybe it survives, maybe you have to contirbute some patches back to the community.
 - "Fibers! I use Node, I love callbacks". Yep, this is just plain old contentious. Basically Nodes answer for staying scalable is by encouraging the use of callbacks for all the things. Meteor uses Fibers, which is a node module that undoes that teaching, and flips node over to use V8's coroutine/thread support. Front end developers are used to using callbacks, server side dev's from other languages are used to having threads and code that looks synchronous. It's a dull debate. I suggest you avoid it. Try both, see which one you like. Meteor uses Fibers.
 
-
+[Meteor London]: http://london.meteor.com
+[Meteor: The Medium Is The Message]: http://the-medium-is-the-message.meteor.com
 [goto.meteor.com]: http://goto.meteor.com
 [Meteor]: http://meteor.com/
 [MongoDB]: http://www.mongodb.org/

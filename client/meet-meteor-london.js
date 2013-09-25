@@ -118,9 +118,9 @@ function playerHeartbeat(){
 	if(heartbeatInterval > 0){
 		var timestamp = updateLastActive();
 		
-		audio.beat.setVolume(100).play().fadeOut(3000, function(){
-			audio.beat.stop();
-		});
+		// audio.beat.setVolume(100).play().fadeOut(3000, function(){
+		// 	audio.beat.stop();
+		// });
 
 		Meteor.setTimeout(function(){ playerHeartbeat(); }, heartbeatInterval); // 
 
@@ -188,7 +188,11 @@ function fin(){
 	stack().position(30);
 }
 
-function finAll(){
+function now(){
+	return Date.now();
+}
+
+finAll = function(){
 	Meteor.call('fin');
 	console.log('Launched Fin');
-}
+};
